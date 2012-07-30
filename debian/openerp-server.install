@@ -1,0 +1,30 @@
+install/openerp-server.conf /etc/openerp
+README /usr/share/doc/openerp
+
+/usr/share/pyshared/openerp/__init__.py
+/usr/share/pyshared/openerp/PKG-INFO
+/usr/share/pyshared/openerp/release.py
+/usr/share/pyshared/openerp/exceptions.py
+/usr/share/pyshared/openerp/netsvc.py
+/usr/share/pyshared/openerp/pooler.py
+/usr/share/pyshared/openerp/sql_db.py
+/usr/share/pyshared/openerp/tiny_socket.py
+/usr/share/pyshared/openerp/cron.py
+/usr/share/pyshared/openerp/import_xml.rng
+/usr/share/pyshared/openerp/loglevels.py
+/usr/share/pyshared/openerp/run_tests.py
+/usr/bin
+/usr/share/pyshared/openerp/db
+/usr/share/pyshared/openerp/modules
+/usr/share/pyshared/openerp/service
+/usr/share/pyshared/openerp/tests
+/usr/share/pyshared/openerp/wizard
+/usr/share/pyshared/openerp/conf
+/usr/share/pyshared/openerp/localedata
+/usr/share/pyshared/openerp/report
+/usr/share/pyshared/openerp/workflow
+/usr/share/pyshared/openerp/osv
+/usr/share/pyshared/openerp/pychart
+/usr/share/pyshared/openerp/test
+/usr/share/pyshared/openerp/tools
+/usr/share/pyshared/openerp/wsgi

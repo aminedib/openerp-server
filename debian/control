@@ -1,13 +1,13 @@
-Source: openerp
+Source: openerp-server
 Section: net
 Priority: optional
 Maintainer: OpenERP SA <al@openerp.com>
-Build-Depends: debhelper (>= 7.0.50~), python, rsync
+Build-Depends: debhelper (>= 7.0.50~), python, rsync, python-setuptools, python-babel, strace
 Standards-Version: 3.9.1
 Homepage: http://www.openerp.com/
 Vcs-Bzr: https://launchpad.net/openobject
 
-Package: openerp
+Package: openerp-server
 Section: net
 Architecture: all
 Depends:
@@ -37,9 +37,10 @@ Depends:
  python-werkzeug,
  python-xlwt,
  python-yaml,
- python-zsi
-Conflicts: tinyerp-server, openerp-server, openerp-web
-Replaces: tinyerp-server, openerp-server, openerp-web
+ python-zsi,
+ openerp-addons-base
+Conflicts: tinyerp-server, openerp
+Replaces: tinyerp-server, openerp
 Recommends:
  graphviz, ghostscript, postgresql, python-imaging, python-matplotlib
 Description: OpenERP Enterprise Resource Management
@@ -50,3 +51,9 @@ Description: OpenERP Enterprise Resource Management
  object database, a dynamic GUI, customizable reports, and NET-RPC and XML-RPC
  interfaces.
 
+Package: openerp-addons-base
+Section: net
+Architecture: all
+Depends:
+ ${misc:Depends},
+Description: OpenERP: addons base module
