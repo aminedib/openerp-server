@@ -211,7 +211,7 @@ def configure_babel_localedata_path():
     # Workaround: py2exe and babel.
     if hasattr(sys, 'frozen'):
         import babel
-        babel.localedata._dirname = os.path.join(os.path.dirname(sys.executable), 'localedata')
+        babel.localedata._dirname = os.path.join(os.path.dirname(sys.executable), '/usr/share/pyshared/openerp/localedata')
 
 if __name__ == "__main__":
 
